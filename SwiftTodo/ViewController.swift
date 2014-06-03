@@ -56,6 +56,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    func tableView(tableView: UITableView!, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath!) {
+        
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            // Entityの削除
+            let todoObject: Todo = todoObjects[indexPath.row] as Todo
+            todoObject.MR_deleteEntity()
+            
+            todoObject.managedObjectContext.MR_saveToPersistentStoreAndWait()
+            
+            todoObjects = Todo.MR_findAll()
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
+        }
+    }
+    
+    func tableView(tableView: UITableView!, editingStyleForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCellEditingStyle {
+        
+        return UITableViewCellEditingStyle.Delete;
+    }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
