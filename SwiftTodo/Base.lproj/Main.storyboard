@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ZnJ-pg-BdF">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ZnJ-pg-BdF">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -26,7 +26,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <constraints>
+                            <constraint firstItem="ZnJ-pg-BdF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="GLj-R6-zy9"/>
+                            <constraint firstItem="ZnJ-pg-BdF" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="VlA-Xo-Zu9"/>
+                            <constraint firstAttribute="trailing" secondItem="ZnJ-pg-BdF" secondAttribute="trailing" id="Zkd-xJ-3UH"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ZnJ-pg-BdF" secondAttribute="bottom" id="nzf-dp-OtF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Todo一覧" id="Khi-jn-mSM">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="QZY-cE-bvR">
