@@ -32,11 +32,12 @@
                             <constraint firstAttribute="trailing" secondItem="ZnJ-pg-BdF" secondAttribute="trailing" id="Zkd-xJ-3UH"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ZnJ-pg-BdF" secondAttribute="bottom" id="nzf-dp-OtF"/>
                         </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" title="Todo一覧" id="Khi-jn-mSM">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="QZY-cE-bvR">
                             <connections>
-                                <action selector="didTouchAddButton:" destination="vXZ-lx-hvc" id="m9f-g3-nBo"/>
+                                <segue destination="4Ph-uH-oPt" kind="show" id="4mb-o2-f2Z"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -47,6 +48,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="900" y="916"/>
+        </scene>
+        <!--Input Detail View Controller - Todo追加-->
+        <scene sceneID="6Dp-Az-Yzy">
+            <objects>
+                <viewController id="4Ph-uH-oPt" customClass="InputDetailViewController" customModule="SwiftTodo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZT2-LB-2if"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pgr-sI-o0H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VYY-TY-c8z">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="タイトルを入力してください" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G8N-gH-sKd">
+                                <rect key="frame" x="20" y="84" width="440" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Geo-kV-U57"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="G8N-gH-sKd" secondAttribute="trailing" constant="20" id="8yx-r6-pym"/>
+                            <constraint firstItem="G8N-gH-sKd" firstAttribute="leading" secondItem="VYY-TY-c8z" secondAttribute="leading" constant="20" id="Jca-45-wQl"/>
+                            <constraint firstItem="G8N-gH-sKd" firstAttribute="top" secondItem="ZT2-LB-2if" secondAttribute="bottom" constant="20" id="KAb-en-MPI"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Todo追加" id="DNe-KL-GJg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Wos-g7-Ylt">
+                            <connections>
+                                <action selector="didTouchDoneButton:" destination="4Ph-uH-oPt" id="cDe-r0-tfi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="titleTextField" destination="G8N-gH-sKd" id="s5e-NZ-9c5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zy7-HW-DHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1454" y="916"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NCb-TT-lRp">

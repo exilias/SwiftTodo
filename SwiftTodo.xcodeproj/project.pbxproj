@@ -15,6 +15,7 @@
 		47047A29193DA2E600F69F1F /* SwiftTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47047A28193DA2E600F69F1F /* SwiftTodoTests.swift */; };
 		472FC279193DB06A00D0CFB6 /* _Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 472FC276193DB06A00D0CFB6 /* _Todo.m */; };
 		472FC27A193DB06A00D0CFB6 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 472FC278193DB06A00D0CFB6 /* Todo.m */; };
+		472FC27D193DB95A00D0CFB6 /* InputDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472FC27C193DB95A00D0CFB6 /* InputDetailViewController.swift */; };
 		818D15341D7E4FC68B72A560 /* libPods-SwiftTodo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1902AF3C14824641A2010CE3 /* libPods-SwiftTodo.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		472FC277193DB06A00D0CFB6 /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
 		472FC278193DB06A00D0CFB6 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
 		472FC27B193DB19000D0CFB6 /* SwiftTodo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftTodo-Bridging-Header.h"; sourceTree = "<group>"; };
+		472FC27C193DB95A00D0CFB6 /* InputDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputDetailViewController.swift; sourceTree = "<group>"; };
 		71C555E5A1A44A64B34DAF1F /* Pods-SwiftTodo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftTodo.xcconfig"; path = "Pods/Pods-SwiftTodo.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				472FC274193DB06A00D0CFB6 /* Model */,
 				47047A12193DA2E600F69F1F /* AppDelegate.swift */,
 				47047A17193DA2E600F69F1F /* ViewController.swift */,
+				472FC27C193DB95A00D0CFB6 /* InputDetailViewController.swift */,
 				47047A19193DA2E600F69F1F /* Main.storyboard */,
 				47047A1C193DA2E600F69F1F /* Images.xcassets */,
 				47047A14193DA2E600F69F1F /* SwiftTodo.xcdatamodeld */,
@@ -284,6 +287,7 @@
 				47047A18193DA2E600F69F1F /* ViewController.swift in Sources */,
 				47047A13193DA2E600F69F1F /* AppDelegate.swift in Sources */,
 				47047A16193DA2E600F69F1F /* SwiftTodo.xcdatamodeld in Sources */,
+				472FC27D193DB95A00D0CFB6 /* InputDetailViewController.swift in Sources */,
 				472FC279193DB06A00D0CFB6 /* _Todo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
