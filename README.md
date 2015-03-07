@@ -132,7 +132,7 @@ Attributesは以下にします。
 ![スクリーンショット 2014-06-03 16.21.58.png](https://qiita-image-store.s3.amazonaws.com/0/21397/90ca8279-2acf-c835-c93f-737d88707635.png "スクリーンショット 2014-06-03 16.21.58.png")
 
 また、このTodoエンティティにクラス名を設定します。
-```Todo```とします。
+```Todo``` とします。
 
 ![スクリーンショット 2014-06-03 16.23.25.png](https://qiita-image-store.s3.amazonaws.com/0/21397/4904ce53-acd3-97a2-f1ad-7fb0327e58c7.png "スクリーンショット 2014-06-03 16.23.25.png")
 
@@ -144,7 +144,7 @@ Attributesは以下にします。
 でインストールできます。
 プロジェクトフォルダに移動し（すでにCocoaPodsで移動済み）、以下のコマンドを実行します。
 ``` $ mogenerator -m SwiftTodo/SwiftTodo.xcdatamodeld/SwiftTodo.xcdatamodel -O Model/ --template-var arc=true ```
-すると、プロジェクトフォルダ以下に```Model```というフォルダが生成されますので、中のファイルごとプロジェクトに追加してください。
+すると、プロジェクトフォルダ以下に ```Model``` というフォルダが生成されますので、中のファイルごとプロジェクトに追加してください。
 かなり雑な説明なので、詰まった場合はWebで検索すると良いです。より詳細なやり方が出てきます。
 
 ## MagicalRecordをSwiftコードから使えるようにする
