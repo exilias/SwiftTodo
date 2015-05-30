@@ -28,7 +28,7 @@ class InputDetailViewController: UIViewController {
         }
         
         // Entityを追加
-        var sampleTodo = Todo.MR_createEntity() as Todo
+        var sampleTodo = Todo.MR_createEntity() as! Todo
         sampleTodo.title = titleTextField.text
         sampleTodo.timeStamp = NSDate()
         

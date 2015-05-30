@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // MARK: - User interaction
 
     @IBAction private func didTouchAddButton(sender : AnyObject) {
-        var sampleTodo: Todo = Todo.MR_createEntity() as Todo   // エンティティーを作成する Create an entity
+        var sampleTodo: Todo = Todo.MR_createEntity() as! Todo   // エンティティーを作成する Create an entity
         sampleTodo.title = "title: \(NSDate())"            // 日付をタイトルにセット Set the title to date string
         sampleTodo.timeStamp = NSDate()                   // 現在時刻をセット Set the timeStamp to current time
         
@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // MARK: - Databasing
     
     private func reloadData() {
-        todoObjects = Todo.MR_findAll() as [Todo]
+        todoObjects = Todo.MR_findAll() as! [Todo]
         tableView.reloadData()
     }
     
@@ -73,7 +73,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             todoObject.managedObjectContext?.MR_saveToPersistentStoreAndWait()
             
-            todoObjects = Todo.MR_findAll() as [Todo]
+            todoObjects = Todo.MR_findAll() as! [Todo]
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
         }
     }
